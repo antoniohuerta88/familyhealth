@@ -33,7 +33,7 @@ Yii::import('ext.YiiDateTimePicker.jqueryDateTime');
 
     <?php 
 
-     if(Yii::app()->user->checkAccess('Doctor'))
+     if(!Yii::app()->user->checkAccess('Doctor'))
     {
         
     ?> 
